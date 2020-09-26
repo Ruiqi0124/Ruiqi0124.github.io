@@ -1,3 +1,11 @@
 html {
     background-color: hotpink;
 }
+
+button {
+    padding: 40px;
+    border: solid 10px;
+    border-radius: 30px;
+    background-color:violet;
+    margin: 50px;
+   }
