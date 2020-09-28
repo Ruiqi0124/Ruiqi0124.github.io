@@ -39,7 +39,7 @@ h3.thePosition
 {   
     position:absolute;
     left:700px;
-    top:900px;
+    top:1400px;
 }
 h4.thePosition
 {   
@@ -53,13 +53,6 @@ h5.thePosition
     position:absolute;
     left:700px;
     top:3000px;
-}
-
-h6.thePosition{
-    position: absolute;
-    left:500px;
-    font-size: 50px;
-    
 }
 
 
@@ -77,9 +70,5 @@ div.fixed{
 }
 
 div.thePosition{
-    position:absolute;
-    top: 200px;
-    left:500px;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif
+    
 }
