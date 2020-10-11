@@ -1,0 +1,17 @@
+html {
+    background-image: url('giphy.gif');
+    background-attachment:fixed;
+    background-size: 100% 100%;
+}
+img
+{
+  opacity:0.6;
+}
+img:hover {
+    opacity: 1;
+   }
+.images{
+    height: 300px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(0,0,20,1);;
+}
