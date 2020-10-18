@@ -1,0 +1,58 @@
+@font-face{
+    font-family: 'The Font';
+    src : url('media/The Font.otf');
+}
+.icon:hover{
+    width: 9%;
+    filter:invert(100%)
+}
+.icon{
+    position: absolute;
+    right:20%;
+    top:50%
+}
+.sideAD{
+    position: fixed;
+    top: 15%;
+    left: 0.5%;
+    width: 9%;
+}
+.sideLBJ{
+    position: fixed;
+    right: 0.5%;
+    top: 15%;
+    text-align: right;
+    width: 9%;
+}
+.sideAD > img{
+    width: 100%;
+}
+.sideLBJ > img{
+    width: 100%;
+}
+#float_banner{
+    position:sticky;
+    top:0;width:100%;
+    background-color: rgb(22, 21, 21);
+    padding-bottom: 1%;
+    padding-top:1%;
+}
+#float_banner a{
+    color: yellow ;
+    margin-right: 1%;
+    margin-left: 1%;
+    font-size: 150%;
+    font-family: "The Font";
+    text-decoration: none;
+}
+
+#champion{
+    display: flex;
+    text-align: center;
+    margin-left: 10%;
+}
+
+#champion > img{
+    padding: 1%;
+    width:20% ;
+}
