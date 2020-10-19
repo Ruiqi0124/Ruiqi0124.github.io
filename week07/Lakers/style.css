@@ -11,39 +11,46 @@
     right:20%;
     top:50%
 }
-.sideAD{
+.sideLeft{
     position: fixed;
+    z-index: -10;
     top: 15%;
     left: 0.5%;
     width: 9%;
 }
-.sideLBJ{
+.sideRight{
     position: fixed;
+    z-index: -10;
     right: 0.5%;
     top: 15%;
     text-align: right;
     width: 9%;
 }
-.sideAD > img{
+.sideLeft > img{
     width: 100%;
 }
-.sideLBJ > img{
+.sideRight > img{
     width: 100%;
 }
-#float_banner{
+.float_banner{
+    display: flex;
     position:sticky;
     top:0;width:100%;
     background-color: rgb(22, 21, 21);
-    padding-bottom: 1%;
-    padding-top:1%;
+    padding-top:0.5%;
+    padding-bottom: 00.5%;
 }
-#float_banner a{
+.float_banner a{
     color: yellow ;
-    margin-right: 1%;
-    margin-left: 1%;
-    font-size: 150%;
+    height: 10%;
+    margin-top: 0.6%;
+    margin-left: 8%;
+    font-size: 250%;
     font-family: "The Font";
     text-decoration: none;
+}
+.float_banner a:hover{
+    background-color:grey;
 }
 
 #champion{
@@ -53,6 +60,30 @@
 }
 
 #champion > img{
-    padding: 1%;
-    width:20% ;
+    margin: 1%;
+    width:20%;
 }
+
+#jersey{
+    display: flex;
+    text-align: center;
+    margin-left: 10%;
+    height: 30%;
+}
+
+#jersey > img{
+    margin: 1%;
+    width:20%;
+}
+
+#jersey > img:hover{
+    border:goldenrod;
+    border-style:ridge;
+    border-width: 8px;
+    border-radius: 5px;
+}
+
+
+
+
+
