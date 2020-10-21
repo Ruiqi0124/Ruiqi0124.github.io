@@ -13,18 +13,24 @@
 }
 .sideLeft{
     position: fixed;
-    z-index: -10;
+    z-index: 0;
     top: 15%;
     left: 0.5%;
     width: 9%;
 }
 .sideRight{
     position: fixed;
-    z-index: -10;
+    z-index: 0;
     right: 0.5%;
     top: 15%;
     text-align: right;
     width: 9%;
+}
+.sideLeft > a > img{
+    width: 100%;
+}
+.sideRight > a > img{
+    width: 100%;
 }
 .sideLeft > img{
     width: 100%;
@@ -34,6 +40,7 @@
 }
 .float_banner{
     display: flex;
+    z-index: 5;
     position:sticky;
     top:0;width:100%;
     background-color: rgb(22, 21, 21);
@@ -62,6 +69,10 @@
 #champion > img{
     margin: 1%;
     width:20%;
+    border:goldenrod;
+    border-style:ridge;
+    border-width: 8px;
+    border-radius: 5px;
 }
 
 #jersey{
@@ -83,7 +94,37 @@
     border-radius: 5px;
 }
 
+#store{
+    display: flex;
+    text-align: center;
+    margin-left: 9%;
+    margin-top: 5%;
+}
 
+#store > div{
+    margin-left: 3%;
+    margin-right: 3%;
+    width:24%;
+    text-align: center;
+}
 
+#store > div > img{
+    width: 100%;
+    border-width: 8px;
+    border-radius: 5px;
+}
+#store > div > img:hover{
+    opacity: 0.7;
+}
 
+#store > div > p{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 180%;
+    display:block;           
+    word-break:keep-all;      
+    white-space:nowrap;       
+    overflow:hidden;          
+    text-overflow:ellipsis; 
+ }
 
