@@ -1,8 +1,140 @@
-a {
- font-size: 40px;
- color:green;
+@font-face{
+    font-family: 'The Font';
+    src : url('media/The Font.otf');
 }
 
-body {
-  text-align: center;  
+html{
+    min-width: 1920px;
+    min-height: 1080px;
 }
+.icon:hover{
+    width: 9%;
+    filter:invert(100%)
+}
+
+.mouse{
+    cursor:url(Champions/media/a.ico),auto;
+}
+.icon{
+    position: absolute;
+    right:20%;
+    top:50%
+}
+.sideLeft{
+    position: fixed;
+    z-index: 0;
+    top: 15%;
+    left: 0.5%;
+    width: 9%;
+}
+.sideRight{
+    position: fixed;
+    z-index: 0;
+    right: 0.5%;
+    top: 15%;
+    text-align: right;
+    width: 9%;
+}
+.sideLeft > a > img{
+    width: 100%;
+}
+.sideRight > a > img{
+    width: 100%;
+}
+.sideLeft > img{
+    width: 100%;
+}
+.sideRight > img{
+    width: 100%;
+}
+.float_banner{
+    display: flex;
+    z-index: 5;
+    position:sticky;
+    top:0;width:100%;
+    background-color: rgb(22, 21, 21);
+    padding-top:0.5%;
+    padding-bottom: 00.5%;
+}
+.float_banner a{
+    color: yellow ;
+    height: 10%;
+    margin-top: 0.6%;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 250%;
+    font-family: "The Font";
+    text-decoration: none;
+}
+.float_banner a:hover{
+    background-color:grey;
+}
+
+#champion{
+    display: flex;
+    text-align: center;
+    margin-left: 10%;
+}
+
+#champion > img{
+    margin: 1%;
+    width:20%;
+    border:goldenrod;
+    border-style:ridge;
+    border-width: 8px;
+    border-radius: 5px;
+}
+
+#jersey{
+    display: flex;
+    text-align: center;
+    margin-left: 10%;
+    height: 30%;
+}
+
+#jersey > img{
+    margin: 1%;
+    width:20%;
+}
+
+#jersey > img:hover{
+    border:goldenrod;
+    border-style:ridge;
+    border-width: 8px;
+    border-radius: 5px;
+}
+
+#store{
+    display: flex;
+    text-align: center;
+    margin-left: 9%;
+    margin-top: 5%;
+}
+
+#store > div{
+    margin-left: 3%;
+    margin-right: 3%;
+    width:24%;
+    text-align: center;
+}
+
+#store > div > img{
+    width: 100%;
+    border-width: 8px;
+    border-radius: 5px;
+}
+#store > div > img:hover{
+    opacity: 0.7;
+}
+
+#store > div > p{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 180%;
+    display:block;           
+    word-break:keep-all;      
+    white-space:nowrap;       
+    overflow:hidden;          
+    text-overflow:ellipsis; 
+ }
+
