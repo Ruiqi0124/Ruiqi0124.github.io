@@ -2,12 +2,17 @@
     font-family: 'The Font';
     src : url('media/The Font.otf');
 }
+
+html{
+    min-width: 1920px;
+    min-height: 1080px;
+}
 .icon:hover{
     width: 9%;
     filter:invert(100%)
 }
 
-*{
+.mouse{
     cursor:url(Champions/media/a.ico),auto;
 }
 .icon{
