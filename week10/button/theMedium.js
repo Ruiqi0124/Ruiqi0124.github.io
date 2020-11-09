@@ -20,20 +20,22 @@ theButton.addEventListener('click', thePotatoe);
 
 let j = 0
 function thePotatoe(){
- let bgcolor = ["blue","yellow","green","red","orange","purple"]
- let btgcolor = ["red","purple","red","green","purple","orange"]
- let textcolor = ["blue","yellow","green","red","orange","purple"]
- console.log("cick!!!");
- theBody.style.backgroundColor = bgcolor[j];
- theButton.style.backgroundColor = btgcolor[j]
- theButton.style.color = textcolor[j]
- theTxt.style.color = btgcolor[j];
- j = j+1
- if (j === 5){
-     j = 0
- }
- document.querySelector('h2').textContent = "you pressed the button!";
-}
+	var x = Math.floor(Math.random() * 256);
+	var y = Math.floor(Math.random()* 256);
+	var z = Math.floor(Math.random()*256);
+    let bgcolor = "rgb(" + x + "," + y + "," + z + ")";
+    let btgcolor =  "rgb(" + y + "," + x + "," + z + ")";
+    let textcolor =  "rgb(" + x + "," + y + "," + z + ")";
+    console.log("click!!!");
+    theBody.style.backgroundColor = bgcolor;
+    theButton.style.backgroundColor = btgcolor;
+    theButton.style.color = textcolor[j]
+    theTxt.style.color = btgcolor[j];
+    j = j+1
+    if (j === 5){
+    j = 0
+ }}
+ document.querySelector('h2').textContent = "you pressed the button!"
 
 // triggering an event with ES6 arrow notation:
 document.addEventListener('keydown', theEvent => {
