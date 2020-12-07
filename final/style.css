@@ -1,0 +1,30 @@
+body{
+    background:url(img/background.jpg);
+    background-attachment: fixed;
+    background-size:cover
+}
+.navbar navbar-expand-lg navbar-light bg-light{
+    background-color: grey;
+}
+#carouselExampleCaptions{
+    width: 55%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+#caption{
+    color: black;
+    text-shadow:0 0 3px white;
+    font-size: 20px;
+}
+
+#images{
+    display: flex;
+    margin-top:1%
+}
+
+#images > div{
+    margin: 4%;
+    width:100%;
+}
+
