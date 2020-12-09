@@ -12,3 +12,7 @@ function openWin(url,name,newWinWidth,newWinHeight){
     //location=no 是否显示地址字段。yes为显示
     //status=no 是否添加状态栏。yes为可以
 }
+
+function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
