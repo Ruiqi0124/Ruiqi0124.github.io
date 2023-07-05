@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Qilin JDM - EG6</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <style>
+         body {
+            background: rgb(220, 220, 220);
+            padding: 0;
+            margin: 0;
+         }
+
+         .navbar {
+            margin-bottom: 0;
+         }
+
+         .container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+         }
+
+         h2 {
+            font-size: 32px;
+         }
+
+         .carousel-inner {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		   }
+
+
+         img {
+            width: 100%;
+         }
+
+
+         .thumbnail {
+            border: none;
+            box-shadow: none;
+            text-align: center;
+            padding: 30px;
+            background-color: #fff;
+         }
+
+         .thumbnail h3 {
+            font-size: 40px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+         }
+
+         .thumbnail p {
+            font-size: 25px;
+            margin-bottom: 10px;
+         }
+
+         .thumbnail a.btn {
+            font-size: 24px;
+         }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-fixed-top" role="navigation">
+         <div class="container-fluid" style="background: rgb(101, 101, 101);">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse" style="width: 10%;">
+                  <img src="images/images.png" style="width:100%;">
+               </button>
+               <a class="navbar-brand" href="index.html" style="background-color: rgb(57, 57, 57);color: antiquewhite;">QILIN JDM</a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+               <ul class="nav navbar-nav">
+                  <li><a href="inventory.html" style="color: antiquewhite;">Inventory</a></li>
+                  <li><a href="how_to_buy.html" style="color: antiquewhite;">How to buy?</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: antiquewhite;">
+                        Our profile
+                        <b class="caret"></b>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="about_us.html">About us</a></li>
+                        <li><a href="why_choose_us.html">Why choose us</a></li>
+                        <li><a href="our_services.html">Our services</a></li>
+                        <li class="divider"></li>
+                        <li><a href="social_media.html">Social Media</a></li>
+                        <li class="divider"></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+               <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                     <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                     <li data-target="#carousel-example" data-slide-to="1"></li>
+                     <li data-target="#carousel-example" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <div class="item active">
+                        <img src="images/EG6.jpg" alt="Car Image 1">
+                     </div>
+                     <div class="item">
+                        <img src="images/eg6-inside.jpg" alt="Car Image 2">
+                     </div>
+                     <div class="item">
+                        <img src="images/eg6-back.jpg" alt="Car Image 3">
+                     </div>
+                  </div>
+                  <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                     <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+               </div>
+               <div class="thumbnail">
+                  <h3>EG6</h3>
+                  <p>Stock ID: HE94102</p>
+                  <p>Year: 1993</p>
+                  <p>Color: Red</p>
+                  <p>Mileage: 114,200 miles</p>
+                  <p>Price: $64,500</p>
+                  <a href="how_to_buy.html" class="btn btn-primary btn-block" >I am interested</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>

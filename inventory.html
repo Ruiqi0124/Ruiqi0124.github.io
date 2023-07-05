@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Qilin JDM - Best JDM Importer in East Coast</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <style>
+         .car-container {
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 1%;
+            background-color: aliceblue;
+            border: 1px solid;
+         }
+
+         .car-image {
+            width: 100%;
+            max-height: 100%
+         }
+
+         .car-details {
+            margin-top: 2%;
+            text-align: center;
+         }
+
+         .car-title {
+            font-size: 26px;
+            margin-bottom: 2%;
+         }
+
+         .car-mileage,
+         .car-price {
+            font-size: 18px;
+            margin-bottom: 1%;
+         }
+
+         .car-button {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            font-size: 24px;
+            background-color: coral;
+         }
+
+         .filter-container {
+            background-color: white;
+            padding: 5px;
+            border: 5px solid lightgray;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            margin-top: 80px;
+            
+         }
+
+         .filter-heading {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+         }
+
+         .filter-option {
+            margin-bottom: 10px;
+            font-size: 20px;
+         }
+
+ 
+      </style>
+   </head>
+   <body style="background: rgb(220, 220, 220);">
+      <nav class="navbar navbar-fixed-top" role="navigation">
+         <div class="container-fluid" style="background: rgb(101, 101, 101);">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse" style="width: 10%;">
+                  <img src="images/images.png" style="width:100%;">
+               </button>
+               <a class="navbar-brand" href="index.html" style="background-color: rgb(57, 57, 57);color: antiquewhite;">QILIN JDM</a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+               <ul class="nav navbar-nav">
+                  <li><a href="inventory.html" style="color: antiquewhite;">Inventory</a></li>
+                  <li><a href="how_to_buy.html" style="color: antiquewhite;">How to buy?</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: antiquewhite;">
+                        Our profile
+                        <b class="caret"></b>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="about_us.html">About us</a></li>
+                        <li><a href="why_choose_us.html">Why choose us</a></li>
+                        <li><a href="our_services.html">Our services</a></li>
+                        <li class="divider"></li>
+                        <li><a href="social_media.html">Social Media</a></li>
+                        <li class="divider"></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="filter-container">
+                  <h4 class="filter-heading">Filter Options</h4>
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="filter-option">
+                           <label for="make">Make:</label>
+                           <select id="make">
+                              <option value="">Any</option>
+                              <option value="nissan">Nissan</option>
+                              <option value="toyota">Toyota</option>
+                              <option value="honda">Honda</option>
+                              <option value="mazda">Mazda</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="filter-option">
+                           <label for="model">Model:</label>
+                           <select id="model">
+                              <option value="">Any</option>
+                              <option value="gtr">GTR</option>
+                              <option value="supra">Supra</option>
+                              <option value="nsx">RX7</option>
+                              <option value="civic">Civic</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="filter-option">
+                           <label for="year">Year:</label>
+                           <select id="year">
+                              <option value="">Any</option>
+                              <option value="1993">1993</option>
+                              <option value="1997">1997</option>
+                              <option value="1998">1998</option>
+                           </select>
+                        </div>
+                        <button class="btn btn-primary filter-button" id="apply-filter">Apply Filter</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="row" id="car-listings">
+            <div class="col-md-12">
+               <div class="row">
+                  <div class="col-md-6" data-make="nissan" data-model="gtr" data-year="1998">
+                     <div class="car-container">
+                        <img src="images/gtr34.jpg" class="car-image">
+                        <div class="car-details">
+                           <h2 class="car-title">1998 Nissan Skyline GTR-34</h2>
+                           <p class="car-mileage">98,800 miles</p>
+                           <p class="car-price">$134,500</p>
+                           <a href="gtr34.html" class="btn btn-primary btn-lg car-button">Details</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6"data-make="mazda" data-model="rx7" data-year="1997">
+                     <div class="car-container">
+                        <img src="images/RX7.jpg" class="car-image">
+                        <div class="car-details">
+                           <h2 class="car-title">1997 Mazda RX7(FC3S)</h2>
+                           <p class="car-mileage">103,800 miles</p>
+                           <p class="car-price">$84,500</p>
+                           <a href="rx7.html" class="btn btn-primary btn-lg car-button">Details</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                <div class="row">
+                   <div class="col-md-6"data-make="honda" data-model="civic" data-year="1993">
+                      <div class="car-container">
+                         <img src="images/EG6.jpg" class="car-image">
+                         <div class="car-details">
+                            <h2 class="car-title">1993 Honda Civic (EG6)</h2>
+                            <p class="car-mileage">114,200 miles</p>
+                            <p class="car-price">$64,500</p>
+                            <a href="eg6.html" class="btn btn-primary btn-lg car-button">Details</a>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-md-6"data-make="toyota" data-model="supra" data-year="1998">
+                      <div class="car-container">
+                         <img src="images/supra.jpg" class="car-image">
+                         <div class="car-details">
+                            <h2 class="car-title">1998 Toyota Supra</h2>
+                            <p class="car-mileage">92,400 miles</p>
+                            <p class="car-price">$94,500</p>
+                            <a href="supra.html" class="btn btn-primary btn-lg car-button">Details</a>
+                         </div>
+                      </div>
+                </div>
+
+
+
+            </div>
+         </div>
+      </div>
+
+      <script>
+         document.getElementById("apply-filter").addEventListener("click", function() {
+
+            var make = document.getElementById("make").value;
+            var model = document.getElementById("model").value;
+            var year = document.getElementById("year").value;
+      
+
+            var carListings = document.getElementById("car-listings").getElementsByClassName("col-md-6");
+      
+
+            for (var i = 0; i < carListings.length; i++) {
+               var listing = carListings[i];
+               var carMake = listing.getAttribute("data-make");
+               var carModel = listing.getAttribute("data-model");
+               var carYear = listing.getAttribute("data-year");
+      
+               var showListing =
+                  (make === "" || carMake === make) &&
+                  (model === "" || carModel === model) &&
+                  (year === "" || carYear === year);
+      
+               listing.style.display = showListing ? "block" : "none";
+            }
+         });
+      </script>
+      
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>
